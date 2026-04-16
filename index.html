@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КонсультПро — Учёт консультаций</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">КонсультПро</span>
+      </div>
+      <nav class="nav">
+        <a href="#records" class="nav-link">Записи</a>
+        <a href="#about" class="nav-link">О системе</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-label">Система управления</p>
+        <h1 class="hero-title">Учёт<br><em>консультаций</em></h1>
+        <p class="hero-sub">Регистрация, обработка и анализ обращений клиентов в единой системе</p>
+        <a href="#records" class="hero-btn">Перейти к записям</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat" id="statTotal">—</div>
+        <div class="stat-label">консультаций<br>в системе</div>
+        <div class="stat divider"></div>
+        <div class="stat" id="statNew">—</div>
+        <div class="stat-label">новых<br>обращений</div>
+      </div>
+    </section>
+
+    <!-- Записи -->
+    <section class="section" id="records">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Список консультаций</h2>
+          <p class="section-sub">Форма создания будет реализована в следующих лабораторных работах</p>
+        </div>
+
+        <div class="controls">
+          <button id="btnAll" class="btn btn-primary">Показать все записи</button>
+          <button id="btnNew" class="btn btn-outline">Показать только NEW</button>
+          <button id="btnStats" class="btn btn-accent">Показать статистику</button>
+        </div>
+
+        <pre id="output" class="output-block">Нажмите кнопку выше для отображения данных...</pre>
+      </div>
+    </section>
+
+    <!-- О системе -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">О системе</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <span class="about-icon">📋</span>
+            <h3>Регистрация</h3>
+            <p>Фиксация всех обращений клиентов с указанием темы и стоимости консультации</p>
+          </div>
+          <div class="about-card">
+            <span class="about-icon">📊</span>
+            <h3>Аналитика</h3>
+            <p>Подсчёт суммарной стоимости, максимального значения и количества новых обращений</p>
+          </div>
+          <div class="about-card">
+            <span class="about-icon">🔍</span>
+            <h3>Фильтрация</h3>
+            <p>Отбор консультаций по статусу и пороговому значению стоимости</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>КонсультПро © 2025 — Лабораторная работа №2</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
